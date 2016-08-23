@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B71AFB51D6BEC8E00DFB524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFB41D6BEC8E00DFB524 /* main.m */; };
+		2B71AFB81D6BEC8E00DFB524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */; };
+		2B71AFBB1D6BEC8E00DFB524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFBA1D6BEC8E00DFB524 /* ViewController.m */; };
+		2B71AFBE1D6BEC8F00DFB524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B71AFBC1D6BEC8F00DFB524 /* Main.storyboard */; };
+		2B71AFC11D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFBF1D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld */; };
+		2B71AFC31D6BEC8F00DFB524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */; };
+		2B71AFC61D6BEC8F00DFB524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B71AFC41D6BEC8F00DFB524 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B71AFB01D6BEC8E00DFB524 /* ProyectoJoyas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoJoyas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B71AFB41D6BEC8E00DFB524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B71AFB61D6BEC8E00DFB524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B71AFB91D6BEC8E00DFB524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B71AFBA1D6BEC8E00DFB524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B71AFBD1D6BEC8F00DFB524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B71AFC01D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProyectoJoyas.xcdatamodel; sourceTree = "<group>"; };
+		2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B71AFC51D6BEC8F00DFB524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B71AFC71D6BEC8F00DFB524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B71AFAD1D6BEC8E00DFB524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B71AFA71D6BEC8E00DFB524 = {
+			isa = PBXGroup;
+			children = (
+				2B71AFB21D6BEC8E00DFB524 /* ProyectoJoyas */,
+				2B71AFB11D6BEC8E00DFB524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B71AFB11D6BEC8E00DFB524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B71AFB01D6BEC8E00DFB524 /* ProyectoJoyas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B71AFB21D6BEC8E00DFB524 /* ProyectoJoyas */ = {
+			isa = PBXGroup;
+			children = (
+				2B71AFB61D6BEC8E00DFB524 /* AppDelegate.h */,
+				2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */,
+				2B71AFB91D6BEC8E00DFB524 /* ViewController.h */,
+				2B71AFBA1D6BEC8E00DFB524 /* ViewController.m */,
+				2B71AFBC1D6BEC8F00DFB524 /* Main.storyboard */,
+				2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */,
+				2B71AFC41D6BEC8F00DFB524 /* LaunchScreen.storyboard */,
+				2B71AFC71D6BEC8F00DFB524 /* Info.plist */,
+				2B71AFBF1D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld */,
+				2B71AFB31D6BEC8E00DFB524 /* Supporting Files */,
+			);
+			path = ProyectoJoyas;
+			sourceTree = "<group>";
+		};
+		2B71AFB31D6BEC8E00DFB524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B71AFB41D6BEC8E00DFB524 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B71AFAF1D6BEC8E00DFB524 /* ProyectoJoyas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B71AFCA1D6BEC8F00DFB524 /* Build configuration list for PBXNativeTarget "ProyectoJoyas" */;
+			buildPhases = (
+				2B71AFAC1D6BEC8E00DFB524 /* Sources */,
+				2B71AFAD1D6BEC8E00DFB524 /* Frameworks */,
+				2B71AFAE1D6BEC8E00DFB524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProyectoJoyas;
+			productName = ProyectoJoyas;
+			productReference = 2B71AFB01D6BEC8E00DFB524 /* ProyectoJoyas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B71AFA81D6BEC8E00DFB524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = RobertoHerrera;
+				TargetAttributes = {
+					2B71AFAF1D6BEC8E00DFB524 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = PQJ98DU98S;
+					};
+				};
+			};
+			buildConfigurationList = 2B71AFAB1D6BEC8E00DFB524 /* Build configuration list for PBXProject "ProyectoJoyas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B71AFA71D6BEC8E00DFB524;
+			productRefGroup = 2B71AFB11D6BEC8E00DFB524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B71AFAF1D6BEC8E00DFB524 /* ProyectoJoyas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B71AFAE1D6BEC8E00DFB524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B71AFC61D6BEC8F00DFB524 /* LaunchScreen.storyboard in Resources */,
+				2B71AFC31D6BEC8F00DFB524 /* Assets.xcassets in Resources */,
+				2B71AFBE1D6BEC8F00DFB524 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B71AFAC1D6BEC8E00DFB524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B71AFBB1D6BEC8E00DFB524 /* ViewController.m in Sources */,
+				2B71AFC11D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld in Sources */,
+				2B71AFB81D6BEC8E00DFB524 /* AppDelegate.m in Sources */,
+				2B71AFB51D6BEC8E00DFB524 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B71AFBC1D6BEC8F00DFB524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B71AFBD1D6BEC8F00DFB524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B71AFC41D6BEC8F00DFB524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B71AFC51D6BEC8F00DFB524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B71AFC81D6BEC8F00DFB524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B71AFC91D6BEC8F00DFB524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B71AFCB1D6BEC8F00DFB524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProyectoJoyas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.ProyectoJoyas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B71AFCC1D6BEC8F00DFB524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProyectoJoyas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.ProyectoJoyas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B71AFAB1D6BEC8E00DFB524 /* Build configuration list for PBXProject "ProyectoJoyas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B71AFC81D6BEC8F00DFB524 /* Debug */,
+				2B71AFC91D6BEC8F00DFB524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B71AFCA1D6BEC8F00DFB524 /* Build configuration list for PBXNativeTarget "ProyectoJoyas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B71AFCB1D6BEC8F00DFB524 /* Debug */,
+				2B71AFCC1D6BEC8F00DFB524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2B71AFBF1D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2B71AFC01D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodel */,
+			);
+			currentVersion = 2B71AFC01D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodel */;
+			path = ProyectoJoyas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2B71AFA81D6BEC8E00DFB524 /* Project object */;
+}
