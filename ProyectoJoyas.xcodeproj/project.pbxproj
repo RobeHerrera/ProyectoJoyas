@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B71AFB51D6BEC8E00DFB524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFB41D6BEC8E00DFB524 /* main.m */; };
 		2B71AFB81D6BEC8E00DFB524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */; };
-		2B71AFBB1D6BEC8E00DFB524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFBA1D6BEC8E00DFB524 /* ViewController.m */; };
+		2B71AFBB1D6BEC8E00DFB524 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFBA1D6BEC8E00DFB524 /* Start.m */; };
 		2B71AFBE1D6BEC8F00DFB524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B71AFBC1D6BEC8F00DFB524 /* Main.storyboard */; };
 		2B71AFC11D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFBF1D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld */; };
 		2B71AFC31D6BEC8F00DFB524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		2B71AFB41D6BEC8E00DFB524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B71AFB61D6BEC8E00DFB524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B71AFB91D6BEC8E00DFB524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2B71AFBA1D6BEC8E00DFB524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B71AFB91D6BEC8E00DFB524 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		2B71AFBA1D6BEC8E00DFB524 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		2B71AFBD1D6BEC8F00DFB524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B71AFC01D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProyectoJoyas.xcdatamodel; sourceTree = "<group>"; };
 		2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		2B71AFB21D6BEC8E00DFB524 /* ProyectoJoyas */ = {
 			isa = PBXGroup;
 			children = (
-				2B71AFB61D6BEC8E00DFB524 /* AppDelegate.h */,
-				2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */,
-				2B71AFB91D6BEC8E00DFB524 /* ViewController.h */,
-				2B71AFBA1D6BEC8E00DFB524 /* ViewController.m */,
+				2B71AFCE1D6BECF300DFB524 /* Controllers */,
+				2B71AFCD1D6BECE900DFB524 /* Main */,
 				2B71AFBC1D6BEC8F00DFB524 /* Main.storyboard */,
 				2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */,
 				2B71AFC41D6BEC8F00DFB524 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				2B71AFB41D6BEC8E00DFB524 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B71AFCD1D6BECE900DFB524 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2B71AFB61D6BEC8E00DFB524 /* AppDelegate.h */,
+				2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2B71AFCE1D6BECF300DFB524 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B71AFB91D6BEC8E00DFB524 /* Start.h */,
+				2B71AFBA1D6BEC8E00DFB524 /* Start.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B71AFBB1D6BEC8E00DFB524 /* ViewController.m in Sources */,
+				2B71AFBB1D6BEC8E00DFB524 /* Start.m in Sources */,
 				2B71AFC11D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld in Sources */,
 				2B71AFB81D6BEC8E00DFB524 /* AppDelegate.m in Sources */,
 				2B71AFB51D6BEC8E00DFB524 /* main.m in Sources */,
