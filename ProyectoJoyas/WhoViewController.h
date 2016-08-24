@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Home.h"
 
 @interface WhoViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *btnBack;
+- (IBAction)btnPressBack:(id)sender;
 
 @end

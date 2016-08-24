@@ -67,8 +67,10 @@
     self.lblItemSelect.text = self.stuffNames[indexPath.row];
     
     if(indexPath.row==0){
-         [self performSegueWithIdentifier:@"MapsViewController" sender:self];
+        [self performSegueWithIdentifier:@"Who" sender:self];
+        
     }
+    
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -76,6 +78,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     if ([segue.destinationViewController isKindOfClass:[WhoViewController class]]) {
+        
         
         /*
         MapsViewController *destinationState    = [segue destinationViewController];

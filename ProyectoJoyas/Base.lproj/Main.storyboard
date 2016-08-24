@@ -119,17 +119,17 @@
                     <connections>
                         <outlet property="lblItemSelect" destination="uKD-BQ-UG5" id="hSP-Y4-E2p"/>
                         <outlet property="tblAmande" destination="n0Y-Mf-zPf" id="t0j-15-qdl"/>
-                        <segue destination="VzY-DG-jHn" kind="modal" identifier="Who" id="3z1-0x-XCM"/>
+                        <segue destination="VzY-DG-jHn" kind="modal" identifier="Who" id="TZH-Zm-as0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vuf-PH-lBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="1038"/>
         </scene>
-        <!--View Controller-->
+        <!--Who View Controller-->
         <scene sceneID="vvG-QW-jlo">
             <objects>
-                <viewController id="VzY-DG-jHn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Who" id="VzY-DG-jHn" customClass="WhoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gcw-Iv-DC6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,14 +142,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xfv-lg-xrr">
+                                <rect key="frame" x="102" y="257" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnPressBack:" destination="VzY-DG-jHn" eventType="touchUpInside" id="gll-QX-mPX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kZD-ZN-HuR"/>
+                    <connections>
+                        <outlet property="btnBack" destination="xfv-lg-xrr" id="U9P-JN-ZTu"/>
+                        <segue destination="iba-WN-F8P" kind="modal" identifier="Home" id="Pme-WL-9KV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZvN-Bh-QIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250" y="1038"/>
+            <point key="canvasLocation" x="1250" y="1032"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W7N-do-tnc">
@@ -163,7 +177,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iba-WN-F8P" kind="relationship" relationship="rootViewController" id="k4O-Oj-Oat"/>
+                        <segue destination="iba-WN-F8P" kind="push" id="mX6-8E-K9K"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALf-2u-Qbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,4 +185,7 @@
             <point key="canvasLocation" x="162" y="1038"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pme-WL-9KV"/>
+    </inferredMetricsTieBreakers>
 </document>
