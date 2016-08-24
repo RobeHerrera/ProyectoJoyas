@@ -120,6 +120,7 @@
                         <outlet property="lblItemSelect" destination="uKD-BQ-UG5" id="hSP-Y4-E2p"/>
                         <outlet property="tblAmande" destination="n0Y-Mf-zPf" id="t0j-15-qdl"/>
                         <segue destination="VzY-DG-jHn" kind="modal" identifier="Who" id="TZH-Zm-as0"/>
+                        <segue destination="Q7O-aI-usj" kind="modal" id="ECm-pE-cbq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vuf-PH-lBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,8 +135,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xa4-or-O7y">
-                                <rect key="frame" x="102" y="119" width="147" height="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quienes Somos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xa4-or-O7y">
+                                <rect key="frame" x="64" y="119" width="185" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -143,10 +144,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xfv-lg-xrr">
-                                <rect key="frame" x="102" y="257" width="46" height="30"/>
+                                <rect key="frame" x="99" y="257" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Reresar"/>
                                 <connections>
                                     <action selector="btnPressBack:" destination="VzY-DG-jHn" eventType="touchUpInside" id="gll-QX-mPX"/>
                                 </connections>
@@ -164,6 +165,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZvN-Bh-QIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1250" y="1032"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7bx-L6-dQu">
+            <objects>
+                <viewController id="Q7O-aI-usj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJB-F7-6NU" customClass="Maps">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localiza nuestras tiendas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="re1-jy-Tex">
+                                <rect key="frame" x="47" y="25" width="247" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zi8-Se-qdF">
+                                <rect key="frame" x="107" y="326" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="iba-WN-F8P" kind="modal" id="PE9-xB-yql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBC-2c-lRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="1801"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W7N-do-tnc">
@@ -186,6 +221,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pme-WL-9KV"/>
+        <segue reference="PE9-xB-yql"/>
     </inferredMetricsTieBreakers>
 </document>
