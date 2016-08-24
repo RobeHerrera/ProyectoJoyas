@@ -28,9 +28,9 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    self.stuffNames   = [[NSMutableArray alloc] initWithObjects: @"Anillos", @"Aretes", @"Collares", @"Dijes", @"Esclavas", @"Juegos", nil];
+    self.stuffNames   = [[NSMutableArray alloc] initWithObjects: @"Quienes Somos?", @"Localiza nuestras tiendas", @"Compra online", @"Contacto",nil];
     
-    self.stuffImgs   = [[NSMutableArray alloc] initWithObjects: @"anillos.jpg", @"aretes.jpg", @"collares.jpg", @"dije.jpg", @"esclava.jpg", @"anillos.jpg", nil];
+    self.stuffImgs   = [[NSMutableArray alloc] initWithObjects: @"question.jpg", @"map.png", @"cart.jpg", @"email.png", nil];
 }
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods
