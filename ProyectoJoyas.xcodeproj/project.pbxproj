@@ -84,10 +84,10 @@
 		2B71AFB21D6BEC8E00DFB524 /* ProyectoJoyas */ = {
 			isa = PBXGroup;
 			children = (
-				2BCB38E11D6DF7CF00722EC3 /* imgs */,
-				2BCB38E01D6DF7BB00722EC3 /* Cells */,
-				2B71AFCE1D6BECF300DFB524 /* Controllers */,
 				2B71AFCD1D6BECE900DFB524 /* Main */,
+				2B71AFCE1D6BECF300DFB524 /* Controllers */,
+				2BCB38E01D6DF7BB00722EC3 /* Cells */,
+				2BCB38E11D6DF7CF00722EC3 /* imgs */,
 				2B71AFBC1D6BEC8F00DFB524 /* Main.storyboard */,
 				2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */,
 				2B71AFC41D6BEC8F00DFB524 /* LaunchScreen.storyboard */,
@@ -109,10 +109,10 @@
 		2B71AFCD1D6BECE900DFB524 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				2BCB38DD1D6DF64800722EC3 /* Declarations.h */,
-				2BCB38DE1D6DF64800722EC3 /* Declarations.m */,
 				2B71AFB61D6BEC8E00DFB524 /* AppDelegate.h */,
 				2B71AFB71D6BEC8E00DFB524 /* AppDelegate.m */,
+				2BCB38DD1D6DF64800722EC3 /* Declarations.h */,
+				2BCB38DE1D6DF64800722EC3 /* Declarations.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -120,12 +120,12 @@
 		2B71AFCE1D6BECF300DFB524 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2BCB38E21D6DF87500722EC3 /* Home.h */,
-				2BCB38E31D6DF87500722EC3 /* Home.m */,
-				2BCB38E41D6DF87500722EC3 /* Intro.h */,
-				2BCB38E51D6DF87500722EC3 /* Intro.m */,
 				2B71AFB91D6BEC8E00DFB524 /* Start.h */,
 				2B71AFBA1D6BEC8E00DFB524 /* Start.m */,
+				2BCB38E41D6DF87500722EC3 /* Intro.h */,
+				2BCB38E51D6DF87500722EC3 /* Intro.m */,
+				2BCB38E21D6DF87500722EC3 /* Home.h */,
+				2BCB38E31D6DF87500722EC3 /* Home.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
