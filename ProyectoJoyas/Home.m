@@ -70,7 +70,18 @@
         [self performSegueWithIdentifier:@"Who" sender:self];
         
     }
-    
+    if(indexPath.row==1){
+        [self performSegueWithIdentifier:@"Maps" sender:self];
+        
+    }
+    if(indexPath.row==2){
+        [self performSegueWithIdentifier:@"Shop" sender:self];
+        
+    }
+    if(indexPath.row==3){
+        [self performSegueWithIdentifier:@"Email" sender:self];
+        
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -79,7 +90,6 @@
     // Pass the selected object to the new view controller.
     if ([segue.destinationViewController isKindOfClass:[WhoViewController class]]) {
         
-        
         /*
         MapsViewController *destinationState    = [segue destinationViewController];
         destinationState.locationLatitude       = self.coorLatitude;
@@ -87,6 +97,16 @@
         destinationState.locationZoom           = self.coorZoom;
         */
     }
+    if ([segue.destinationViewController isKindOfClass:[MapsViewController class]]) {
+    
+    }
+    /*
+    if ([segue.destinationViewController isKindOfClass:[WhoViewController class]]) {
+    }
+    if ([segue.destinationViewController isKindOfClass:[WhoViewController class]]) {
+    }
+     */
+    
 }
 
 @end

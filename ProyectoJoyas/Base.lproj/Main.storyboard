@@ -120,7 +120,9 @@
                         <outlet property="lblItemSelect" destination="uKD-BQ-UG5" id="hSP-Y4-E2p"/>
                         <outlet property="tblAmande" destination="n0Y-Mf-zPf" id="t0j-15-qdl"/>
                         <segue destination="VzY-DG-jHn" kind="modal" identifier="Who" id="TZH-Zm-as0"/>
-                        <segue destination="Q7O-aI-usj" kind="modal" id="ECm-pE-cbq"/>
+                        <segue destination="Q7O-aI-usj" kind="modal" identifier="Maps" id="ECm-pE-cbq"/>
+                        <segue destination="wvG-sG-jsM" kind="modal" identifier="Shop" id="zPi-vH-N6r"/>
+                        <segue destination="bFd-Xd-CUu" kind="modal" identifier="Email" id="yVg-yB-E3X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vuf-PH-lBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,11 +168,11 @@
             </objects>
             <point key="canvasLocation" x="1250" y="1032"/>
         </scene>
-        <!--View Controller-->
+        <!--Maps View Controller-->
         <scene sceneID="7bx-L6-dQu">
             <objects>
-                <viewController id="Q7O-aI-usj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YJB-F7-6NU" customClass="Maps">
+                <viewController id="Q7O-aI-usj" customClass="MapsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJB-F7-6NU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -187,18 +189,98 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnPressBack:" destination="Q7O-aI-usj" eventType="touchUpInside" id="10o-hZ-OdC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="iba-WN-F8P" kind="modal" id="PE9-xB-yql"/>
+                        <outlet property="btnBack" destination="Zi8-Se-qdF" id="hmk-Xe-jEO"/>
+                        <segue destination="iba-WN-F8P" kind="modal" identifier="Home" id="PE9-xB-yql"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZBC-2c-lRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264" y="1801"/>
+        </scene>
+        <!--Shop View Controller-->
+        <scene sceneID="HNu-VO-MGO">
+            <objects>
+                <viewController storyboardIdentifier="Shop" id="wvG-sG-jsM" customClass="ShopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tFJ-50-VQg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tienda en linea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Es-RU-0yQ">
+                                <rect key="frame" x="56" y="46" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QtL-vB-0Xe">
+                                <rect key="frame" x="140" y="313" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Regresar"/>
+                                <connections>
+                                    <action selector="btnPressBack:" destination="wvG-sG-jsM" eventType="touchUpInside" id="ejd-IG-dHS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="QtL-vB-0Xe" id="dRs-do-2KN"/>
+                        <segue destination="iba-WN-F8P" kind="modal" identifier="Home" id="akI-28-4Xa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvO-3N-GxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="2521"/>
+        </scene>
+        <!--Email View Controller-->
+        <scene sceneID="rnf-ED-9Tu">
+            <objects>
+                <viewController storyboardIdentifier="Email" id="bFd-Xd-CUu" customClass="EmailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hht-zr-9hM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qkR-RX-XQJ">
+                                <rect key="frame" x="110" y="125" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iVg-Ey-szl">
+                                <rect key="frame" x="114" y="198" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Regresar"/>
+                                <connections>
+                                    <action selector="btnPressBack:" destination="bFd-Xd-CUu" eventType="touchUpInside" id="J1w-iZ-xY6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="iVg-Ey-szl" id="4VT-BB-Pqn"/>
+                        <segue destination="iba-WN-F8P" kind="modal" identifier="Home" id="jRO-Sf-JdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNe-l4-7ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="3225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W7N-do-tnc">
@@ -221,6 +303,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PE9-xB-yql"/>
+        <segue reference="jRO-Sf-JdY"/>
     </inferredMetricsTieBreakers>
 </document>
