@@ -65,6 +65,25 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.lblItemSelect.hidden = NO;
     self.lblItemSelect.text = self.stuffNames[indexPath.row];
+    
+    if(indexPath.row==0){
+         [self performSegueWithIdentifier:@"MapsViewController" sender:self];
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    if ([segue.destinationViewController isKindOfClass:[WhoViewController class]]) {
+        
+        /*
+        MapsViewController *destinationState    = [segue destinationViewController];
+        destinationState.locationLatitude       = self.coorLatitude;
+        destinationState.locationLongitude      = self.coorLongitude;
+        destinationState.locationZoom           = self.coorZoom;
+        */
+    }
 }
 
 @end

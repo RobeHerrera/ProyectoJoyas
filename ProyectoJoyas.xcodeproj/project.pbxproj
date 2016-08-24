@@ -28,6 +28,7 @@
 		2BCB39521D6E3A3800722EC3 /* esclava.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BCB39491D6E3A3800722EC3 /* esclava.jpg */; };
 		2BCB39531D6E3A3800722EC3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCB394A1D6E3A3800722EC3 /* map.png */; };
 		2BCB39541D6E3A3800722EC3 /* question.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BCB394B1D6E3A3800722EC3 /* question.jpg */; };
+		2BCB39571D6E3BAF00722EC3 /* WhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB39561D6E3BAF00722EC3 /* WhoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		2BCB39491D6E3A3800722EC3 /* esclava.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = esclava.jpg; path = imgs/esclava.jpg; sourceTree = "<group>"; };
 		2BCB394A1D6E3A3800722EC3 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = imgs/map.png; sourceTree = "<group>"; };
 		2BCB394B1D6E3A3800722EC3 /* question.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = question.jpg; path = imgs/question.jpg; sourceTree = "<group>"; };
+		2BCB39551D6E3BAF00722EC3 /* WhoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoViewController.h; sourceTree = "<group>"; };
+		2BCB39561D6E3BAF00722EC3 /* WhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				2BCB38E51D6DF87500722EC3 /* Intro.m */,
 				2BCB38E21D6DF87500722EC3 /* Home.h */,
 				2BCB38E31D6DF87500722EC3 /* Home.m */,
+				2BCB39551D6E3BAF00722EC3 /* WhoViewController.h */,
+				2BCB39561D6E3BAF00722EC3 /* WhoViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				2B71AFC11D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld in Sources */,
 				2BCB38E61D6DF87500722EC3 /* Home.m in Sources */,
 				2B71AFB81D6BEC8E00DFB524 /* AppDelegate.m in Sources */,
+				2BCB39571D6E3BAF00722EC3 /* WhoViewController.m in Sources */,
 				2B71AFB51D6BEC8E00DFB524 /* main.m in Sources */,
 				2BCB38EB1D6DF88500722EC3 /* cellAmande.m in Sources */,
 				2BCB38DF1D6DF64800722EC3 /* Declarations.m in Sources */,

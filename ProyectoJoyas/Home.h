@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cellAmande.h"
+#import "WhoViewController.h"
 
 @interface Home : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tblAvengers;
