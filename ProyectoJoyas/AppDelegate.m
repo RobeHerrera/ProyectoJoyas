@@ -20,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //[Digits sharedInstance].sessionUpdateDelegate = self;
     [Fabric with:@[[Digits class]]];
     return YES;
 }

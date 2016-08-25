@@ -19,16 +19,19 @@
 /**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+   // Digits.sharedInstance().sessionUpdateDelegate = self
     /*Digit part to add login button*/
+    //[[Digits sharedInstance] logOut]; /*Comentar esta linea para seguir logeado*/
     DGTAuthenticateButton *authButton;
     authButton = [DGTAuthenticateButton buttonWithAuthenticationCompletion:^(DGTSession *session, NSError *error) {
         if (session.userID) {
             // TODO: associate the session userID with your user model
-            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
+            NSString *msg = [NSString stringWithFormat:@"Numero de celular: %@", session.phoneNumber];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ya estas logeado!"
                                                             message:msg
                                                            delegate:nil
-                                                  cancelButtonTitle:@"OK"
+                                                  cancelButtonTitle:@"ACEPTAR"
                                                   otherButtonTitles:nil];
             [alert show];
         
