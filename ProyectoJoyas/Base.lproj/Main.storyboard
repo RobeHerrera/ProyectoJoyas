@@ -8,7 +8,7 @@
         <!--Start-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Start" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" id="BYZ-38-t0r" customClass="Start" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,14 +41,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exto nudumi asdmfasdfasdf \nasdfaskdlflaksdf sadfasdf" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yih-pi-WmA" userLabel="lblIntro">
-                                <rect key="frame" x="20" y="370" width="280" height="106"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="itg-VP-GYd" userLabel="btnIntro">
                                 <rect key="frame" x="76" y="493" width="169" height="36"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -67,6 +59,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exto nudumi asdmfasdfasdf \nasdfaskdlflaksdf sadfasdf" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yih-pi-WmA" userLabel="lblIntro">
+                                <rect key="frame" x="20" y="370" width="280" height="106"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -171,7 +171,7 @@
         <!--Maps View Controller-->
         <scene sceneID="7bx-L6-dQu">
             <objects>
-                <viewController id="Q7O-aI-usj" customClass="MapsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapsViewController" id="Q7O-aI-usj" customClass="MapsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YJB-F7-6NU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +285,7 @@
         <!--Navigation Controller-->
         <scene sceneID="W7N-do-tnc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dos-ps-2Qw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationView" automaticallyAdjustsScrollViewInsets="NO" id="dos-ps-2Qw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z2T-Cv-7Ex">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -294,7 +294,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iba-WN-F8P" kind="push" id="mX6-8E-K9K"/>
+                        <segue destination="iba-WN-F8P" kind="push" identifier="NavigationControllerSegue" id="mX6-8E-K9K"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALf-2u-Qbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -303,6 +303,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jRO-Sf-JdY"/>
+        <segue reference="mX6-8E-K9K"/>
     </inferredMetricsTieBreakers>
 </document>
