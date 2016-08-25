@@ -7,6 +7,7 @@
 //
 
 #import "Start.h"
+#import <DigitsKit/DigitsKit.h>
 
 @interface Start ()
 
@@ -18,9 +19,49 @@
 /**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initController];
+    /*Digit part to add login button*/
+    DGTAuthenticateButton *authButton;
+    authButton = [DGTAuthenticateButton buttonWithAuthenticationCompletion:^(DGTSession *session, NSError *error) {
+        if (session.userID) {
+            // TODO: associate the session userID with your user model
+            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
+                                                            message:msg
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        
+            /*Here is my code*/
+            [self initController];
+            
+        } else if (error) {
+            NSLog(@"Authentication error: %@", error.localizedDescription);
+        }
+    }];
+    CGPoint point;
+    point.x = 215.0f;
+    point.y = 450.0f;
+    authButton.center = point;
+    authButton.digitsAppearance = [self makeTheme];
+    [self.view addSubview:authButton];
+   /*End to logoin button*/
+    
     
 }
+//-------------------------------------------------------------------------------
+- (DGTAppearance *)makeTheme {
+    DGTAppearance *theme = [[DGTAppearance alloc] init];
+    /*
+    theme.bodyFont = [UIFont fontWithName:@"Noteworthy-Light" size:16];
+    theme.labelFont = [UIFont fontWithName:@"Noteworthy-Bold" size:17];
+    */
+     theme.accentColor = [UIColor colorWithRed:(0.0/255.0) green:(172/255.0) blue:(238/255.0) alpha:1];
+    theme.backgroundColor = [UIColor colorWithRed:(230.0/255.0) green:(255/255.0) blue:(250/255.0) alpha:1];
+    // TODO: Set a UIImage as a logo with theme.logoImage
+    return theme;
+}
+
 //-------------------------------------------------------------------------------
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
