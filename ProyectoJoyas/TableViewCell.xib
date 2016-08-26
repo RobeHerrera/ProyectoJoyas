@@ -64,6 +64,10 @@
                 <animations/>
             </tableViewCellContentView>
             <animations/>
+            <connections>
+                <outlet property="imgAmande" destination="2o1-ee-S0r" id="On1-vh-rB4"/>
+                <outlet property="lblName" destination="A0z-DD-3Gn" id="Grb-j1-3PA"/>
+            </connections>
             <point key="canvasLocation" x="367" y="302"/>
         </tableViewCell>
     </objects>
