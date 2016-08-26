@@ -25,14 +25,31 @@
 }
 /**/
 -(void)sendMail:(id)sender{
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
+        mail.mailComposeDelegate = self;
+        [mail setSubject:@"Sample Subject"];
+        [mail setMessageBody:@"Here is some main text in the email!" isHTML:NO];
+        [mail setToRecipients:@[@"testingEmail@example.com"]];
+        
+        [self presentViewController:mail animated:YES completion:NULL];
+    }
+    else
+    {
+        NSLog(@"This device cannot send email");
+    }
+    /*
     mailComposer = [[MFMailComposeViewController alloc]init];
     mailComposer.mailComposeDelegate = self;
     [mailComposer setSubject:@"Test mail"];
     [mailComposer setMessageBody:@"Testing message for the test mail" isHTML:NO];
-     [self presentModalViewController:mailComposer animated:YES];
+     [self presentViewController:mailComposer animated:YES completion:nil];
+     */
      }
      
 #pragma mark - mail compose delegate
+/*
      -(void)mailComposeController:(MFMailComposeViewController *)controller
              didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
                  if (result) {
@@ -41,9 +58,33 @@
                  if (error) {
                      NSLog(@"Error : %@",error);
                  }
-                 [self dismissModalViewControllerAnimated:YES];
+                 //[self dismissModalViewControllerAnimated:YES];
+         [self presentViewController:mailComposer animated:YES completion:nil];
                  
              }
+ */
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result) {
+        case MFMailComposeResultSent:
+            NSLog(@"You sent the email.");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"You saved a draft of this email");
+            break;
+        case MFMailComposeResultCancelled:
+            NSLog(@"You cancelled sending this email.");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail failed:  An error occurred when trying to compose this email");
+            break;
+        default:
+            NSLog(@"An error occurred when trying to compose this email");
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 
 #pragma mark - Navigation
 
