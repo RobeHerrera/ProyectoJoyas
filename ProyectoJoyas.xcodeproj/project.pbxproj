@@ -173,12 +173,12 @@
 				2BCB39561D6E3BAF00722EC3 /* WhoViewController.m */,
 				2BCB39581D6E55E200722EC3 /* MapsViewController.h */,
 				2BCB39591D6E55E200722EC3 /* MapsViewController.m */,
+				2B789F7A1D6FE82E00967986 /* CatalogViewController.h */,
+				2B789F7B1D6FE82E00967986 /* CatalogViewController.m */,
 				2BCB395B1D6E58EA00722EC3 /* ShopViewController.h */,
 				2BCB395C1D6E58EA00722EC3 /* ShopViewController.m */,
 				2BCB395E1D6E58F500722EC3 /* EmailViewController.h */,
 				2BCB395F1D6E58F500722EC3 /* EmailViewController.m */,
-				2B789F7A1D6FE82E00967986 /* CatalogViewController.h */,
-				2B789F7B1D6FE82E00967986 /* CatalogViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

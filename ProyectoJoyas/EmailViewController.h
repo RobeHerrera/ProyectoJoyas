@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Home.h"
-@interface EmailViewController : UIViewController
+#import <MessageUI/MessageUI.h>
+
+@interface EmailViewController : UIViewController<MFMailComposeViewControllerDelegate>
+{
+    MFMailComposeViewController *mailComposer;
+}
+-(IBAction)sendMail:(id)sender;
+
 @property (strong, nonatomic) IBOutlet UIButton *btnBack;
 - (IBAction)btnPressBack:(id)sender;
 @end

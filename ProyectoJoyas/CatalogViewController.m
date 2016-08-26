@@ -16,7 +16,7 @@
 @end
 
 @implementation CatalogViewController
-
+NSInteger indexSelected;
 /**********************************************************************************************/
 #pragma mark - Initialization methods
 /**********************************************************************************************/
@@ -72,26 +72,13 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    indexSelected = indexPath.row;
+    /*
     self.lblItemSelect.hidden = NO;
     self.lblItemSelect.text = self.stuffNames[indexPath.row];
-    /*
-    if(indexPath.row==0){
-        [self performSegueWithIdentifier:@"Who" sender:self];
-        
-    }
-    if(indexPath.row==1){
-        [self performSegueWithIdentifier:@"Maps" sender:self];
-        
-    }
-    if(indexPath.row==2){
-        [self performSegueWithIdentifier:@"Shop" sender:self];
-        
-    }
-    if(indexPath.row==3){
-        [self performSegueWithIdentifier:@"Email" sender:self];
-        
-    }
-     */
+    */
+    [self performSegueWithIdentifier:@"ShopViewController" sender:self];
+
 }
 
 #pragma mark - Navigation
@@ -107,6 +94,14 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     if ([segue.destinationViewController isKindOfClass:[Home class]]) {
+        
+    }
+    if ([segue.destinationViewController isKindOfClass:[ShopViewController class]]) {
+        ShopViewController *destination   = [segue destinationViewController];
+        destination.stuffNames     = self.stuffNames[indexSelected];
+        destination.stuffPrices        = self.stuffPrices[indexSelected];
+        destination.stuffImgs          = self.stuffImgs[indexSelected];
+        destination.stuffMaterial     = self.stuffMaterial[indexSelected];
     }
 }
 @end
