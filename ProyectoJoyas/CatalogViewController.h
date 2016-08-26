@@ -11,7 +11,6 @@
 #import "TableViewCell.h"
 
 @interface CatalogViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITableView *tblAvengers;
 @property (strong, nonatomic) IBOutlet UILabel *lblItemSelect;
 @property (strong, nonatomic) IBOutlet UITableView *tblAmande;
 @property (strong, nonatomic) IBOutlet UIButton *btnBack;

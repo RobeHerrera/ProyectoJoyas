@@ -10,6 +10,8 @@
 
 @interface CatalogViewController ()
 @property NSMutableArray *stuffNames;
+@property NSMutableArray *stuffPrices;
+@property NSMutableArray *stuffMaterial;
 @property NSMutableArray *stuffImgs;
 @end
 
@@ -29,9 +31,13 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    self.stuffNames   = [[NSMutableArray alloc] initWithObjects: @"Quienes Somos?", @"Localiza nuestras tiendas", @"Compra online", @"Contacto",nil];
+    self.stuffNames   = [[NSMutableArray alloc] initWithObjects: @"Anillos de matrimonio", @"Aretes", @"Collar Artesanal", @"Dijes & Nombres", @"Esclavas Personalizadas", @"Juegos completos", nil];
     
-    self.stuffImgs   = [[NSMutableArray alloc] initWithObjects: @"question.jpg", @"map.png", @"cart.jpg", @"email.png", nil];
+    self.stuffImgs   = [[NSMutableArray alloc] initWithObjects: @"anillos.jpg", @"aretes.jpg", @"collares.jpg", @"dije.jpg", @"esclava.jpg", @"anillos.jpg", nil];
+    
+    self.stuffMaterial  = [[NSMutableArray alloc] initWithObjects: @"Oro Blanco", @"Resina Colores", @"Laton Chapeado", @"Plata, oro, chapa", @"Oro o Plata", @"Chapeados", nil];
+    
+    self.stuffPrices   = [[NSMutableArray alloc] initWithObjects: @"2,500.00", @"150.00", @"250.00", @"200.00", @"3,000.00", @"550.00", nil];
 }
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods
@@ -58,15 +64,17 @@
     }
     //Fill cell with info from arrays
     cell.lblName.text       = self.stuffNames[indexPath.row];
+    cell.lblPrice.text       = self.stuffPrices[indexPath.row];
+    cell.lblMaterial.text       = self.stuffMaterial[indexPath.row];
     cell.imgAmande.image   = [UIImage imageNamed:self.stuffImgs[indexPath.row]];
     
     return cell;
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //self.lblItemSelect.hidden = NO;
-    //self.lblItemSelect.text = self.stuffNames[indexPath.row];
-    
+    self.lblItemSelect.hidden = NO;
+    self.lblItemSelect.text = self.stuffNames[indexPath.row];
+    /*
     if(indexPath.row==0){
         [self performSegueWithIdentifier:@"Who" sender:self];
         
@@ -83,6 +91,7 @@
         [self performSegueWithIdentifier:@"Email" sender:self];
         
     }
+     */
 }
 
 #pragma mark - Navigation

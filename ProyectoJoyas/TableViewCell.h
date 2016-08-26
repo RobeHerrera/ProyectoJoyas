@@ -11,5 +11,7 @@
 @interface TableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *imgAmande;
 @property (strong, nonatomic) IBOutlet UILabel *lblName;
+@property (strong, nonatomic) IBOutlet UILabel *lblMaterial;
+@property (strong, nonatomic) IBOutlet UILabel *lblPrice;
 
 @end
