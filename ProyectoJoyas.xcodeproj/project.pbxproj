@@ -14,6 +14,9 @@
 		2B71AFC11D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B71AFBF1D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld */; };
 		2B71AFC31D6BEC8F00DFB524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */; };
 		2B71AFC61D6BEC8F00DFB524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B71AFC41D6BEC8F00DFB524 /* LaunchScreen.storyboard */; };
+		2B789F781D6FDB0800967986 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B789F761D6FDB0800967986 /* TableViewCell.m */; };
+		2B789F791D6FDB0800967986 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B789F771D6FDB0800967986 /* TableViewCell.xib */; };
+		2B789F7C1D6FE82E00967986 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B789F7B1D6FE82E00967986 /* CatalogViewController.m */; };
 		2BCB38DF1D6DF64800722EC3 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB38DE1D6DF64800722EC3 /* Declarations.m */; };
 		2BCB38E61D6DF87500722EC3 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB38E31D6DF87500722EC3 /* Home.m */; };
 		2BCB38E71D6DF87500722EC3 /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB38E51D6DF87500722EC3 /* Intro.m */; };
@@ -32,6 +35,10 @@
 		2BCB395A1D6E55E200722EC3 /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB39591D6E55E200722EC3 /* MapsViewController.m */; };
 		2BCB395D1D6E58EA00722EC3 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB395C1D6E58EA00722EC3 /* ShopViewController.m */; };
 		2BCB39601D6E58F500722EC3 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB395F1D6E58F500722EC3 /* EmailViewController.m */; };
+		2BE045E61D6F747D001F7FEA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE045E21D6F747D001F7FEA /* Fabric.framework */; };
+		2BE045E71D6F747D001F7FEA /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE045E31D6F747D001F7FEA /* DigitsKit.framework */; };
+		2BE045E81D6F747D001F7FEA /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BE045E41D6F747D001F7FEA /* DigitsKitResources.bundle */; };
+		2BE045E91D6F747D001F7FEA /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE045E51D6F747D001F7FEA /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,11 @@
 		2B71AFC21D6BEC8F00DFB524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B71AFC51D6BEC8F00DFB524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B71AFC71D6BEC8F00DFB524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B789F751D6FDB0800967986 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2B789F761D6FDB0800967986 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2B789F771D6FDB0800967986 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		2B789F7A1D6FE82E00967986 /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
+		2B789F7B1D6FE82E00967986 /* CatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogViewController.m; sourceTree = "<group>"; };
 		2BCB38DD1D6DF64800722EC3 /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
 		2BCB38DE1D6DF64800722EC3 /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 		2BCB38E21D6DF87500722EC3 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
@@ -72,6 +84,10 @@
 		2BCB395C1D6E58EA00722EC3 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
 		2BCB395E1D6E58F500722EC3 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
 		2BCB395F1D6E58F500722EC3 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+		2BE045E21D6F747D001F7FEA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		2BE045E31D6F747D001F7FEA /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		2BE045E41D6F747D001F7FEA /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		2BE045E51D6F747D001F7FEA /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE045E61D6F747D001F7FEA /* Fabric.framework in Frameworks */,
+				2BE045E91D6F747D001F7FEA /* TwitterCore.framework in Frameworks */,
+				2BE045E71D6F747D001F7FEA /* DigitsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +107,10 @@
 		2B71AFA71D6BEC8E00DFB524 = {
 			isa = PBXGroup;
 			children = (
+				2BE045E21D6F747D001F7FEA /* Fabric.framework */,
+				2BE045E31D6F747D001F7FEA /* DigitsKit.framework */,
+				2BE045E41D6F747D001F7FEA /* DigitsKitResources.bundle */,
+				2BE045E51D6F747D001F7FEA /* TwitterCore.framework */,
 				2B71AFB21D6BEC8E00DFB524 /* ProyectoJoyas */,
 				2B71AFB11D6BEC8E00DFB524 /* Products */,
 			);
@@ -150,6 +173,8 @@
 				2BCB39561D6E3BAF00722EC3 /* WhoViewController.m */,
 				2BCB39581D6E55E200722EC3 /* MapsViewController.h */,
 				2BCB39591D6E55E200722EC3 /* MapsViewController.m */,
+				2B789F7A1D6FE82E00967986 /* CatalogViewController.h */,
+				2B789F7B1D6FE82E00967986 /* CatalogViewController.m */,
 				2BCB395B1D6E58EA00722EC3 /* ShopViewController.h */,
 				2BCB395C1D6E58EA00722EC3 /* ShopViewController.m */,
 				2BCB395E1D6E58F500722EC3 /* EmailViewController.h */,
@@ -164,6 +189,9 @@
 				2BCB38E81D6DF88500722EC3 /* cellAmande.h */,
 				2BCB38E91D6DF88500722EC3 /* cellAmande.m */,
 				2BCB38EA1D6DF88500722EC3 /* cellAmande.xib */,
+				2B789F751D6FDB0800967986 /* TableViewCell.h */,
+				2B789F761D6FDB0800967986 /* TableViewCell.m */,
+				2B789F771D6FDB0800967986 /* TableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -194,6 +222,7 @@
 				2B71AFAC1D6BEC8E00DFB524 /* Sources */,
 				2B71AFAD1D6BEC8E00DFB524 /* Frameworks */,
 				2B71AFAE1D6BEC8E00DFB524 /* Resources */,
+				2BE045E11D6F7434001F7FEA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -243,11 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BCB39531D6E3A3800722EC3 /* map.png in Resources */,
+				2B789F791D6FDB0800967986 /* TableViewCell.xib in Resources */,
 				2BCB39541D6E3A3800722EC3 /* question.jpg in Resources */,
 				2BCB394F1D6E3A3800722EC3 /* collares.jpg in Resources */,
 				2BCB394E1D6E3A3800722EC3 /* cart.jpg in Resources */,
 				2BCB394C1D6E3A3800722EC3 /* anillos.jpg in Resources */,
 				2BCB394D1D6E3A3800722EC3 /* aretes.jpg in Resources */,
+				2BE045E81D6F747D001F7FEA /* DigitsKitResources.bundle in Resources */,
 				2BCB39501D6E3A3800722EC3 /* dije.jpg in Resources */,
 				2B71AFC61D6BEC8F00DFB524 /* LaunchScreen.storyboard in Resources */,
 				2BCB38EC1D6DF88500722EC3 /* cellAmande.xib in Resources */,
@@ -260,6 +291,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BE045E11D6F7434001F7FEA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b0fb1946dd5d268feedf20c11b95a852adb8f046 0f1c3753b0d94762c118cbe9ae4dd62500a9480a1243067855e38a8072e2b9a1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B71AFAC1D6BEC8E00DFB524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,11 +318,13 @@
 				2BCB39601D6E58F500722EC3 /* EmailViewController.m in Sources */,
 				2BCB395D1D6E58EA00722EC3 /* ShopViewController.m in Sources */,
 				2BCB395A1D6E55E200722EC3 /* MapsViewController.m in Sources */,
+				2B789F781D6FDB0800967986 /* TableViewCell.m in Sources */,
 				2B71AFB81D6BEC8E00DFB524 /* AppDelegate.m in Sources */,
 				2BCB39571D6E3BAF00722EC3 /* WhoViewController.m in Sources */,
 				2B71AFB51D6BEC8E00DFB524 /* main.m in Sources */,
 				2BCB38EB1D6DF88500722EC3 /* cellAmande.m in Sources */,
 				2BCB38DF1D6DF64800722EC3 /* Declarations.m in Sources */,
+				2B789F7C1D6FE82E00967986 /* CatalogViewController.m in Sources */,
 				2BCB38E71D6DF87500722EC3 /* Intro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +435,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ProyectoJoyas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.ProyectoJoyas;
@@ -397,6 +450,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ProyectoJoyas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.ProyectoJoyas;
