@@ -32,14 +32,9 @@
 		2BCB395A1D6E55E200722EC3 /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB39591D6E55E200722EC3 /* MapsViewController.m */; };
 		2BCB395D1D6E58EA00722EC3 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB395C1D6E58EA00722EC3 /* ShopViewController.m */; };
 		2BCB39601D6E58F500722EC3 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB395F1D6E58F500722EC3 /* EmailViewController.m */; };
-		8E33AE101D6E8CEA002F1B48 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8E33AE0F1D6E8CEA002F1B48 /* Podfile */; };
-		A71CDFD38A1B57F6174B9593 /* Pods_ProyectoJoyas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FE1BCC6D055B23275ED7E9 /* Pods_ProyectoJoyas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04FE1BCC6D055B23275ED7E9 /* Pods_ProyectoJoyas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoJoyas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E42BD2B2178DE6BBDA88C90 /* Pods-ProyectoJoyas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoJoyas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoJoyas/Pods-ProyectoJoyas.debug.xcconfig"; sourceTree = "<group>"; };
-		274E0BA5BC19AD7414D7F08B /* Pods-ProyectoJoyas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoJoyas.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoJoyas/Pods-ProyectoJoyas.release.xcconfig"; sourceTree = "<group>"; };
 		2B71AFB01D6BEC8E00DFB524 /* ProyectoJoyas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoJoyas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B71AFB41D6BEC8E00DFB524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B71AFB61D6BEC8E00DFB524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,7 +72,6 @@
 		2BCB395C1D6E58EA00722EC3 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
 		2BCB395E1D6E58F500722EC3 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
 		2BCB395F1D6E58F500722EC3 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
-		8E33AE0F1D6E8CEA002F1B48 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71CDFD38A1B57F6174B9593 /* Pods_ProyectoJoyas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +90,6 @@
 			children = (
 				2B71AFB21D6BEC8E00DFB524 /* ProyectoJoyas */,
 				2B71AFB11D6BEC8E00DFB524 /* Products */,
-				325D36EE6F27F927CEC338BD /* Pods */,
-				D6AE1CC2FB2FD02381E28480 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,7 +114,6 @@
 				2B71AFC71D6BEC8F00DFB524 /* Info.plist */,
 				2B71AFBF1D6BEC8F00DFB524 /* ProyectoJoyas.xcdatamodeld */,
 				2B71AFB31D6BEC8E00DFB524 /* Supporting Files */,
-				8E33AE0F1D6E8CEA002F1B48 /* Podfile */,
 			);
 			path = ProyectoJoyas;
 			sourceTree = "<group>";
@@ -194,23 +184,6 @@
 			name = imgs;
 			sourceTree = "<group>";
 		};
-		325D36EE6F27F927CEC338BD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1E42BD2B2178DE6BBDA88C90 /* Pods-ProyectoJoyas.debug.xcconfig */,
-				274E0BA5BC19AD7414D7F08B /* Pods-ProyectoJoyas.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D6AE1CC2FB2FD02381E28480 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				04FE1BCC6D055B23275ED7E9 /* Pods_ProyectoJoyas.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,12 +191,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B71AFCA1D6BEC8F00DFB524 /* Build configuration list for PBXNativeTarget "ProyectoJoyas" */;
 			buildPhases = (
-				AB44D2705A28ADE220A5D3DF /* [CP] Check Pods Manifest.lock */,
 				2B71AFAC1D6BEC8E00DFB524 /* Sources */,
 				2B71AFAD1D6BEC8E00DFB524 /* Frameworks */,
 				2B71AFAE1D6BEC8E00DFB524 /* Resources */,
-				83766FD8F20F0D72928FFD95 /* [CP] Embed Pods Frameworks */,
-				264BFA6778FBA6CED5249B07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +215,7 @@
 				TargetAttributes = {
 					2B71AFAF1D6BEC8E00DFB524 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = QXF33N93KH;
+						DevelopmentTeam = PQJ98DU98S;
 					};
 				};
 			};
@@ -284,60 +254,11 @@
 				2B71AFC31D6BEC8F00DFB524 /* Assets.xcassets in Resources */,
 				2BCB39511D6E3A3800722EC3 /* email.png in Resources */,
 				2BCB39521D6E3A3800722EC3 /* esclava.jpg in Resources */,
-				8E33AE101D6E8CEA002F1B48 /* Podfile in Resources */,
 				2B71AFBE1D6BEC8F00DFB524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		264BFA6778FBA6CED5249B07 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoJoyas/Pods-ProyectoJoyas-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		83766FD8F20F0D72928FFD95 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoJoyas/Pods-ProyectoJoyas-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB44D2705A28ADE220A5D3DF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B71AFAC1D6BEC8E00DFB524 /* Sources */ = {
@@ -463,12 +384,9 @@
 		};
 		2B71AFCB1D6BEC8F00DFB524 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E42BD2B2178DE6BBDA88C90 /* Pods-ProyectoJoyas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoJoyas/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.ProyectoJoyas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,12 +395,9 @@
 		};
 		2B71AFCC1D6BEC8F00DFB524 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 274E0BA5BC19AD7414D7F08B /* Pods-ProyectoJoyas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoJoyas/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.ProyectoJoyas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
